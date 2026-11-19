@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Fornecedores</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-4">
+
+        <form>
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome Fantasia ou primeiro nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Pessoa</label><br>
+
+                    <input type="radio" name="pessoa" id="fisica" value="F">
+                    <label for="fisica">Física</label>
+
+                    <input type="radio" name="pessoa" id="juridica" value="J">
+                    <label for="juridica">Jurídica</label>
+                </div>
+
+            </div>
+
+            <div class="row g-3 mb-3">
+                <div class="col-md-8">
+                    <label for="razao" class="form-label">Razão</label>
+                    <input type="text" class="form-control" id="razao" name="razao">
+                </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+                <div class="col-md-4">
+                    <label for="cnpj" class="form-label">CNPJ</label>
+                    <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00">
+                </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-md-8">
+                    <label for="endereco" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" name="bairro">
+                </div>
+
+            </div>
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" name="cidade">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="estado" class="form-label">Estado</label>
+
+                    <select class="form-select" id="estado" name="estado">
+                        <option value="MG" selected>Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000">
+                </div>
+
+            </div>
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-md-4">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" name="telefone">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="celular" class="form-label">Celular</label>
+                    <input type="text" class="form-control" id="celular" name="celular">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="fax" class="form-label">Fax</label>
+                    <input type="text" class="form-control" id="fax" name="fax">
+                </div>
+
+            </div>
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-md-6">
+                    <label for="contato" class="form-label">Contato</label>
+                    <input type="text" class="form-control" id="contato" name="contato">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12">
+
+                    <input type="checkbox" id="avisos" name="avisos" checked>
+                    <label for="avisos">
+                        Receber e-mails de aviso sobre novas licitações
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+                <div class="col-12">
+
+                    <label class="form-label">Tipo de empresa</label>
+
+                    <div>
+                        <input type="radio" name="tipo_empresa" id="epp" value="epp">
+                        <label for="epp">
+                            MICRO EMPRESAS / EMPRESAS DE PEQUENO PORTE
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="tipo_empresa" id="demais" value="demais">
+                        <label for="demais">
+                            DEMAIS FORMAS DE CONSTITUIÇÃO
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary">Salvar cadastro</button>
+                </div>
+
+                <div class="col-12">
+                    <p>
+                        ATENÇÃO: Este cadastro não substitui o cadastro de fornecedores
+                        do município de São Sebastião do Paraíso
+                    </p>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
